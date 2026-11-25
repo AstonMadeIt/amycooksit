@@ -171,6 +171,28 @@ header {
 .hero h1 em { color: #ffd7a8; }
 .hero .lede { color: #fff8ef; }
 
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+  color: #ffd7b0;
+  font: 700 12px/1.4 ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.rules { margin: 22px 0 0; padding: 0; list-style: none; }
+.rules li {
+  max-width: var(--measure);
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+}
+
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
 .actions, .close-actions {
   display: flex;
   flex-wrap: wrap;
@@ -426,7 +448,7 @@ footer a { color: var(--deep); }
   }
   .nav.open { display: flex; }
   header { position: relative; }
-  .hero, .paths, .section-head, .price-row, .dish, .event, .split {
+  .hero, .paths, .section-head, .price-row, .dish, .event, .split, .pair {
     grid-template-columns: 1fr;
   }
   .hero { min-height: 0; }

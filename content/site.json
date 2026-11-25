@@ -1,8 +1,8 @@
 {
   "name": "Amy Cooks It",
   "url": "https://amycooksit.com/",
-  "title": "Amy Cooks It — supper, prep, events, and catering in Austin",
-  "description": "A New York kitchen rebuilding in Austin. Weekly supper in 78756, custom meal prep, events, and full-service catering. Text Amy to book the table.",
+  "title": "Amy Cooks It — weekly supper in 78756, events and catering in Austin",
+  "description": "Five cooked dinners from $54 in Brentwood, Crestview, and Allandale. Events and catering for a room of 12 to 40. Send the date and headcount. Amy replies with a number before she cooks.",
   "phone_display": "(347) 420-8728",
   "phone_e164": "+13474208728",
   "area": {
@@ -20,11 +20,12 @@
     "href": "https://astonmadeit.github.io/amycooksit-holiday-menu/"
   },
   "hero": {
-    "kicker": "A New York kitchen, rebuilt in 78756",
+    "kicker": "Austin · supper, events, catering",
     "title_lead": "The week.",
     "title_em": "The room.",
     "title_close": "The table.",
-    "lede": "Amy left New York to rebuild the business in Austin, on the way to a food truck of her own. Start with a week of supper. Or bring her a household, a birthday, or a room that needs a cook.",
+    "lede": "Five cooked dinners from $54, in Brentwood, Crestview, or Allandale. A room of 12 to 40, dropped off or hosted. Jerk chicken, mojo pernil, turkey chili. Send the date and the headcount. Amy replies with a number before she cooks.",
+    "facts": ["From $54", "78756", "12–40 for a room", "Number before she cooks"],
     "image": "assets/images/jerk.jpg",
     "image_alt": "Jerk chicken with rice and peas and steamed cabbage, a serving illustration standing in until a kitchen photograph replaces it",
     "image_credit": "Jerk plate · serving illustration"
@@ -146,5 +147,12 @@
     "Four-cheese mac and cheese",
     "Southern cornbread"
   ],
-  "events": []
+  "events": [],
+  "rules": [
+    "Supper drops in Brentwood, Crestview, and Allandale. Farther than that is a quote, not a promise.",
+    "A room is usually 12 to 40 guests. Outside that, ask. She will say if the kitchen can take it.",
+    "Half to reserve, non-refundable, by Square invoice. Balance before the event. This page does not charge a card.",
+    "Listed supper prices are the food. Tax, and any delivery fee, are on the invoice.",
+    "The kitchen is shared. Name the allergy in the note. She confirms the dish. This page does not claim an allergen-free kitchen."
+  ]
 }

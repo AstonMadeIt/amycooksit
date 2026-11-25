@@ -41,6 +41,8 @@ Append to `events` in `content/site.json`:
 
 Instagram is [instagram.com/amycooksit](https://www.instagram.com/amycooksit/). TikTok is `social.tiktok`. Leave it `null` until the real URL exists. A null value hides the link.
 
+The quote note is built in the browser from date, headcount, place, dietary needs, and budget. It does not charge a card. Do not add a reply-time, delivery fee, radius, or allergen-free claim unless Amy has published that number. Those lines belong in `rules` only after they are real.
+
 ## What this page will not invent
 
 Prices, the phone number, and the dish list come from `site.json`. The public phone is the number already printed on the 2025 holiday menu. Supper delivery is Brentwood, Crestview, and Allandale. Events and catering are quoted, with Austin delivery confirmed in that quote. The New York holiday menu stays archived. It is not the Austin offer.

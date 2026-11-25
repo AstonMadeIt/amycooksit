@@ -156,15 +156,26 @@ def jsonld(site: dict) -> str:
         "telephone": site["phone_e164"],
         "image": site["url"] + versioned(site["hero"]["image"]),
         "servesCuisine": ["Latin American", "Caribbean", "American"],
-        "areaServed": {
-            "@type": "City",
-            "name": site["area"]["city"],
-            "address": {
-                "@type": "PostalAddress",
-                "addressRegion": site["area"]["region"],
-                "postalCode": site["area"]["postal"],
-                "addressCountry": "US",
-            },
+        "priceRange": "$",
+        "areaServed": [
+            {"@type": "City", "name": "Austin"}
+        ] + [
+            {"@type": "Place", "name": f"{name}, Austin, TX"}
+            for name in site["area"]["supper_neighborhoods"]
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Weekly supper",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "name": item["name"],
+                    "price": item["price"].replace("$", ""),
+                    "priceCurrency": "USD",
+                    "description": item["detail"],
+                }
+                for item in site["tiers"]
+            ],
         },
         "sameAs": same_as,
     }
@@ -187,6 +198,8 @@ def render(site: dict) -> str:
         "@@TITLE_EM@@": esc(hero["title_em"]),
         "@@TITLE_CLOSE@@": esc(hero["title_close"]),
         "@@LEDE@@": esc(hero["lede"]),
+        "@@FACTS@@": "".join(f"<li>{esc(item)}</li>" for item in hero["facts"]),
+        "@@RULES@@": "".join(f"<li>{esc(item)}</li>" for item in site["rules"]),
         "@@SMS@@": esc(sms),
         "@@HERO@@": esc(versioned(hero["image"])),
         "@@HERO_ALT@@": esc(hero["image_alt"]),
@@ -212,6 +225,16 @@ def render(site: dict) -> str:
     found = [word for word in banned if word in page]
     if found:
         raise SystemExit(f"public page contains private or placeholder text: {found}")
+    required = (
+        "Get a quote",
+        "Headcount",
+        "does not charge a card",
+        "does not claim an allergen-free kitchen",
+        "price per guest",
+    )
+    missing = [line for line in required if line not in page]
+    if missing:
+        raise SystemExit(f"money path missing: {missing}")
     return page + ("\n" if not page.endswith("\n") else "")
 
 

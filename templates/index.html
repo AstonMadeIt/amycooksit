@@ -39,9 +39,10 @@
         <p class="kicker">@@KICKER@@</p>
         <h1>@@TITLE_LEAD@@<br><em>@@TITLE_EM@@</em><br>@@TITLE_CLOSE@@</h1>
         <p class="lede">@@LEDE@@</p>
+        <ul class="facts">@@FACTS@@</ul>
         <div class="actions">
-          <a class="button" id="text-amy" href="@@SMS@@">Text Amy</a>
-          <a class="button quiet" href="#paths">Four ways in</a>
+          <a class="button" href="#book">Get a quote</a>
+          <a class="button quiet" href="#supper">Supper from $54</a>
         </div>
       </div>
       <figure>
@@ -56,7 +57,7 @@
           <p class="kicker">Not only the week</p>
           <div>
             <h2>Four doors.<br><em>One kitchen.</em></h2>
-            <p>Weekly supper is the easy door. A household with its own rules, a birthday, or a room that needs a host is different work, and it is priced that way.</p>
+            <p>Weekly supper is the easy door. A household with its own rules, a birthday, or a room that needs a host is different work, and it is priced that way. Amy left New York to rebuild this kitchen in Austin, on the way to a food truck. The food is the work. The truck is the horizon.</p>
           </div>
         </div>
         <div class="paths">@@SERVICES@@</div>
@@ -127,23 +128,59 @@
       </div>
     </section>
 
+    <section class="section sheet" id="rules">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">Before she cooks</p>
+          <div>
+            <h2>The constraints<br><em>are the quote.</em></h2>
+            <p>A buyer should be able to see the limits without emailing. What is not on this list is not a promise.</p>
+            <ul class="rules">@@RULES@@</ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="close" id="book">
       <div class="wrap">
-        <p class="kicker">Book the table</p>
-        <h2>Text Amy.<br><em>Or send the note.</em></h2>
-        <p class="lede">@@PHONE@@. She confirms the week, the neighborhood, and the total before anything is cooked. Instagram is @@INSTAGRAM_HANDLE@@.</p>
+        <p class="kicker">Get a quote</p>
+        <h2>Send the date.<br><em>And the count.</em></h2>
+        <p class="lede">One note is enough. Date, headcount, place, and any restriction. Amy replies with the total before she cooks. For a room, that reply is a price per guest. There is no cart here. Payment is a Square invoice after you accept the number. Text @@PHONE@@, or Instagram @@INSTAGRAM_HANDLE@@.</p>
         <div class="close-actions">
-          <a class="button" href="@@SMS@@">Text @@PHONE@@</a>
+          <a class="button sms" id="text-amy" href="@@SMS@@">Text the note</a>
           <a class="button quiet" href="@@INSTAGRAM@@" rel="me noopener noreferrer">Instagram</a>
           @@TIKTOK@@
         </div>
         <form class="form" action="@@SMS@@">
           <label for="offer">What you need</label>
           <select id="offer">@@OFFERS@@</select>
-          <label for="note">Date, neighborhood, or the rule</label>
-          <input id="note" name="note" autocomplete="off" placeholder="Crestview, Saturday, no tomatoes">
+          <div class="pair">
+            <div>
+              <label for="when">Date</label>
+              <input id="when" type="date" name="date">
+            </div>
+            <div>
+              <label for="headcount">Headcount</label>
+              <input id="headcount" type="number" min="1" inputmode="numeric" placeholder="12">
+            </div>
+          </div>
+          <label for="place">Neighborhood or address</label>
+          <input id="place" autocomplete="street-address" placeholder="Crestview, or the office address">
+          <label for="diet">Dietary needs</label>
+          <input id="diet" placeholder="No tomatoes. Nut allergy. Sauce on the side.">
+          <label for="budget">Budget, if you have one</label>
+          <select id="budget">
+            <option value="">Not sure yet</option>
+            <option>The listed supper price</option>
+            <option>Under $500</option>
+            <option>$500 to $1,500</option>
+            <option>$1,500 to $3,000</option>
+            <option>Over $3,000</option>
+          </select>
+          <label for="note">Anything else</label>
+          <input id="note" autocomplete="off" placeholder="Office lunch, or a birthday at the house">
           <label for="msg">Note</label>
-          <textarea id="msg" readonly>Hi Amy — I’d like to book a table. Please confirm timing and the total.</textarea>
+          <textarea id="msg" readonly>Hi Amy — I’d like a quote. Please reply with the total before you cook.</textarea>
           <button class="quiet" id="copy" type="button">Copy note</button>
           <span id="status" role="status"></span>
         </form>
