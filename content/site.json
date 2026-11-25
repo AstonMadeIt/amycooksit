@@ -1,0 +1,150 @@
+{
+  "name": "Amy Cooks It",
+  "url": "https://amycooksit.com/",
+  "title": "Amy Cooks It — supper, prep, events, and catering in Austin",
+  "description": "A New York kitchen rebuilding in Austin. Weekly supper in 78756, custom meal prep, events, and full-service catering. Text Amy to book the table.",
+  "phone_display": "(347) 420-8728",
+  "phone_e164": "+13474208728",
+  "area": {
+    "city": "Austin",
+    "region": "TX",
+    "postal": "78756",
+    "supper_neighborhoods": ["Brentwood", "Crestview", "Allandale"]
+  },
+  "social": {
+    "instagram": "https://www.instagram.com/amycooksit/",
+    "tiktok": null
+  },
+  "archive": {
+    "label": "2025 holiday menu, New York",
+    "href": "https://astonmadeit.github.io/amycooksit-holiday-menu/"
+  },
+  "hero": {
+    "kicker": "A New York kitchen, rebuilt in 78756",
+    "title_lead": "The week.",
+    "title_em": "The room.",
+    "title_close": "The table.",
+    "lede": "Amy left New York to rebuild the business in Austin, on the way to a food truck of her own. Start with a week of supper. Or bring her a household, a birthday, or a room that needs a cook.",
+    "image": "assets/images/jerk.jpg",
+    "image_alt": "Jerk chicken with rice and peas and steamed cabbage, a serving illustration standing in until a kitchen photograph replaces it",
+    "image_credit": "Jerk plate · serving illustration"
+  },
+  "services": [
+    {
+      "id": "supper",
+      "number": "01",
+      "name": "Weekly supper",
+      "promise": "Dinner handled, without turning the house into a meal-prep account.",
+      "detail": "Five nights, or three. Brentwood, Crestview, and Allandale.",
+      "price_label": "From $54"
+    },
+    {
+      "id": "prep",
+      "number": "02",
+      "name": "Custom meal prep",
+      "promise": "A week written for the people who actually live there.",
+      "detail": "The portions, the rules, and a menu written for that house.",
+      "price_label": "Quoted"
+    },
+    {
+      "id": "events",
+      "number": "03",
+      "name": "Events",
+      "promise": "The night is the product. The food has to survive a room.",
+      "detail": "Drop-off, or Amy stays. Twelve to forty guests.",
+      "price_label": "Quoted · 12–40"
+    },
+    {
+      "id": "catering",
+      "number": "04",
+      "name": "Full-service catering",
+      "promise": "Drop it off, or let Amy run the table.",
+      "detail": "Chafing dishes, house sauces, half to reserve.",
+      "price_label": "Quoted"
+    }
+  ],
+  "tiers": [
+    {
+      "id": "three",
+      "name": "Three suppers",
+      "price": "$54",
+      "unit": "$18 a plate",
+      "detail": "Pick three dinners for one. Pickup in 78756, window confirmed by text."
+    },
+    {
+      "id": "one",
+      "name": "Supper for one",
+      "price": "$95",
+      "unit": "$19 a plate",
+      "detail": "Five different dinners, packed for one, with one neighborhood drop."
+    },
+    {
+      "id": "two",
+      "name": "Supper for two",
+      "price": "$180",
+      "unit": "$18 a plate",
+      "detail": "The same five dinners for two. Packed together, or apart if you ask."
+    }
+  ],
+  "weeks": [
+    {
+      "number": "01",
+      "name": "Meet Amy",
+      "note": "Lemon, garlic, and a little smoke.",
+      "dishes": [
+        ["Seafood", "Cajun salmon", "Lemon-garlic rice and wilted spinach."],
+        ["Sunday supper", "Roast chicken and dressing", "Cornbread dressing, green beans, and pan gravy."],
+        ["Tex-Mex", "Beef taco supper", "Black beans, lime slaw, and warm tortillas."],
+        ["From Amy", "Mojo pork", "Citrus-garlic pork, sweet plantains, and cabbage."],
+        ["Freezer", "Turkey chili", "A square of cornbread, with cheddar and sour cream on the side."]
+      ]
+    },
+    {
+      "number": "02",
+      "name": "Hill Country",
+      "note": "Brown gravy and green chile.",
+      "dishes": [
+        ["Seafood", "Garlic shrimp pasta", "A light garlic cream and a cool cucumber salad."],
+        ["Sunday supper", "Chopped steak", "Onion gravy, mashed potatoes, and roasted carrots."],
+        ["Tex-Mex", "Chicken enchiladas verdes", "Green chile sauce and pinto beans."],
+        ["From Amy", "Peruvian roast chicken", "Rice, with ají verde spooned on at the table."],
+        ["Freezer", "White bean stew", "Smoked turkey, white beans, and tender greens."]
+      ]
+    },
+    {
+      "number": "03",
+      "name": "Sunday at home",
+      "note": "A slow pot on the stove.",
+      "dishes": [
+        ["Seafood", "Lemon-herb fish", "Roasted potatoes and green beans."],
+        ["Sunday supper", "Turkey meatloaf", "Buttery mash with pan gravy."],
+        ["Tex-Mex", "Pork and black-bean bowl", "Seasoned pork over rice, with crunchy slaw."],
+        ["From Amy", "Curry stew chicken", "Chicken simmered with potatoes and carrots."],
+        ["Freezer", "Beef picadillo", "Seasoned beef, rice, and sweet plantains."]
+      ]
+    },
+    {
+      "number": "04",
+      "name": "Back by request",
+      "note": "The plates people ask for again.",
+      "dishes": [
+        ["Seafood", "Cajun salmon", "Lemon rice and garlicky greens."],
+        ["Sunday supper", "Sunday pot roast", "Slow-braised beef, carrots, and pan juices."],
+        ["Tex-Mex", "Beef taco night", "Warm tortillas, beans, and toppings packed apart."],
+        ["From Amy", "Jerk chicken", "Rice and peas, steamed cabbage, extra jerk sauce on the side."],
+        ["Freezer", "Turkey chili", "Amy’s pot, with the cold toppings tucked alongside."]
+      ]
+    }
+  ],
+  "kitchen": [
+    "Honey jerk salmon",
+    "Mojo Cuban pernil",
+    "Haitian griot",
+    "Filipino tocino ham",
+    "Smoked turkey collards",
+    "Arroz con gandules",
+    "Four-cheese mac and cheese",
+    "Southern cornbread"
+  ],
+  "events": []
+}

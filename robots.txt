@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://amycooksit.com/sitemap.xml
