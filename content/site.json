@@ -147,12 +147,5 @@
     "Four-cheese mac and cheese",
     "Southern cornbread"
   ],
-  "events": [],
-  "rules": [
-    "Supper drops in Brentwood, Crestview, and Allandale. Farther than that is a quote, not a promise.",
-    "A room is usually 12 to 40 guests. Outside that, ask. She will say if the kitchen can take it.",
-    "Half to reserve, non-refundable, by Square invoice. Balance before the event. This page does not charge a card.",
-    "Listed supper prices are the food. Tax, and any delivery fee, are on the invoice.",
-    "The kitchen is shared. Name the allergy in the note. She confirms the dish. This page does not claim an allergen-free kitchen."
-  ]
+  "events": []
 }

@@ -199,7 +199,6 @@ def render(site: dict) -> str:
         "@@TITLE_CLOSE@@": esc(hero["title_close"]),
         "@@LEDE@@": esc(hero["lede"]),
         "@@FACTS@@": "".join(f"<li>{esc(item)}</li>" for item in hero["facts"]),
-        "@@RULES@@": "".join(f"<li>{esc(item)}</li>" for item in site["rules"]),
         "@@SMS@@": esc(sms),
         "@@HERO@@": esc(versioned(hero["image"])),
         "@@HERO_ALT@@": esc(hero["image_alt"]),
@@ -225,16 +224,12 @@ def render(site: dict) -> str:
     found = [word for word in banned if word in page]
     if found:
         raise SystemExit(f"public page contains private or placeholder text: {found}")
-    required = (
-        "Get a quote",
-        "Headcount",
-        "does not charge a card",
-        "does not claim an allergen-free kitchen",
-        "price per guest",
-    )
+    required = ("Get a quote", "Headcount", "price per guest", "There is no cart here")
     missing = [line for line in required if line not in page]
     if missing:
         raise SystemExit(f"money path missing: {missing}")
+    if "Before she cooks" in page or 'id="rules"' in page:
+        raise SystemExit("owner constraints section must stay off the public page")
     return page + ("\n" if not page.endswith("\n") else "")
 
 

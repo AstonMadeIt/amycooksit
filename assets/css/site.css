@@ -184,13 +184,6 @@ header {
   text-transform: uppercase;
 }
 
-.rules { margin: 22px 0 0; padding: 0; list-style: none; }
-.rules li {
-  max-width: var(--measure);
-  padding: 14px 0;
-  border-top: 1px solid var(--line);
-}
-
 .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 
 .actions, .close-actions {

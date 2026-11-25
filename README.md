@@ -41,7 +41,7 @@ Append to `events` in `content/site.json`:
 
 Instagram is [instagram.com/amycooksit](https://www.instagram.com/amycooksit/). TikTok is `social.tiktok`. Leave it `null` until the real URL exists. A null value hides the link.
 
-The quote note is built in the browser from date, headcount, place, dietary needs, and budget. It does not charge a card. Do not add a reply-time, delivery fee, radius, or allergen-free claim unless Amy has published that number. Those lines belong in `rules` only after they are real.
+The quote note is built in the browser from date, headcount, place, dietary needs, and budget. It does not charge a card. Do not add a public constraints section, a reply-time, a delivery fee, a radius, or an allergen-free claim unless Amy has published that number and asked for it on the page.
 
 ## What this page will not invent
 
